@@ -1,0 +1,22 @@
+{
+  "name": "ui-toolbar",
+  "version": "0.0.0",
+  "dependencies": {
+    "coffeeify": "",
+    "coffee-script": "",
+    "browserify": "",
+    "browserify-data": "",
+    "gulp": "",
+    "gulp-browserify": "",
+    "gulp-shell": "",
+    "gulp-less": "",
+    "gulp-rename": "",
+    "vulcanize": "",
+    "express": "",
+    "ui-fonts": "git+https://github.com/wballard/ui-fonts.git"
+  },
+  "scripts": {
+    "prepublish": "gulp --require coffee-script/register --gulpfile gulpfile.litcoffee build",
+    "test": "gulp --require coffee-script/register --gulpfile gulpfile.litcoffee watch"
+  }
+}
