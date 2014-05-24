@@ -56,7 +56,7 @@ Vulcanize for the speed.
       built = 'build/ui-toolbar.html'
       gulp.src ''
         .pipe shell([
-          "vulcanize --inline --strip -o ui-toolbar.html build/*.html"
+          "vulcanize --inline --strip -o ui-toolbar.html #{__dirname}/build/*.html"
           ])
 
     gulp.task 'build', ['vulcanize', 'readme']

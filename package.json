@@ -2,24 +2,25 @@
   "name": "ui-toolbar",
   "version": "0.0.0",
   "dependencies": {
-    "coffeeify": "",
-    "coffee-script": "",
     "browserify": "",
     "browserify-data": "",
+    "coffee-script": "",
+    "coffeeify": "",
+    "express": "",
     "gulp": "",
     "gulp-browserify": "",
-    "gulp-shell": "",
-    "gulp-less": "",
-    "gulp-replace": "",
-    "gulp-rename": "",
     "gulp-concat": "",
-    "vulcanize": "",
-    "express": "",
-    "ui-styles": "git+https://github.com/wballard/ui-styles.git"
+    "gulp-less": "",
+    "gulp-rename": "",
+    "gulp-replace": "",
+    "gulp-shell": "",
+    "ui-styles": "git+https://github.com/wballard/ui-styles.git",
+    "ui-toolbar-button": "git+https://github.com/wballard/ui-toolbar-button.git",
+    "vulcanize": ""
   },
   "license": "MIT",
   "scripts": {
-    "postinstall": "gulp --require coffee-script/register --gulpfile gulpfile.litcoffee build",
+    "postinstall": "bower install && gulp --require coffee-script/register --gulpfile gulpfile.litcoffee build",
     "test": "gulp --require coffee-script/register --gulpfile gulpfile.litcoffee watch"
   }
 }

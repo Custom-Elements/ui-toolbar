@@ -6,6 +6,7 @@
     <script src="bower_components/platform/platform.js"></script>
     <link rel="import" href="bower_components/polymer/polymer.html">
     <link rel="import" href="build/ui-toolbar.html">
+    <link rel="import" href="node_modules/ui-toolbar-button/ui-toolbar-button.html">
     <style>
       body {
         font-family: "Helvetica Neue", "Helvetica", Arial;
@@ -15,13 +16,14 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 2em;
       }
     </style>
   </head>
   <body unresolved>
     <div id="holder">
       <ui-toolbar>
+        <ui-toolbar-button icon="fa-beer" toggle="true"></ui-toolbar-button>
+        <ui-toolbar-button icon="fa-eye" toggle="true" active="false"></ui-toolbar-button>
       </ui-toolbar>
     </div>
     <script>
