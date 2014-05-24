@@ -4,7 +4,6 @@ This is a very simple toolbar that you fill up with
 
 Check out [demo.html](demo.html) to see a sample.
 
-    Polymer 'ui-toolbar',
 
 ##Events
 
@@ -16,12 +15,7 @@ Check out [demo.html](demo.html) to see a sample.
 
 ##Polymer Lifecycle
 
-      created: ->
 
-      ready: ->
 
-      attached: ->
 
-      domReady: ->
 
-      detached: ->
