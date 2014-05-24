@@ -13,7 +13,7 @@
     "gulp-rename": "",
     "vulcanize": "",
     "express": "",
-    "ui-fonts": "git+https://github.com/wballard/ui-fonts.git"
+    "ui-styles": "git+https://github.com/wballard/ui-styles.git"
   },
   "scripts": {
     "prepublish": "gulp --require coffee-script/register --gulpfile gulpfile.litcoffee build",
