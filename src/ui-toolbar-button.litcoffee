@@ -6,6 +6,7 @@ tool button. This supports:
 * hotkey mapping
 * clicking
 
+Check out [demo.html](demo.html) to see a sample.
 
     Polymer 'ui-toolbar-button',
 
