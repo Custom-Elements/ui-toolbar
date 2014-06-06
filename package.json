@@ -16,9 +16,9 @@
     "gulp-rename": "",
     "gulp-replace": "",
     "gulp-shell": "",
-    "polymer": "git://github.com/Custom-Elements/polymer",
-    "ui-fonts": "git://github.com/custom-elements/ui-fonts",
-    "ui-styles": "git://github.com/custom-elements/ui-styles",
+    "polymer": "git://github.com/Custom-Elements/polymer#master",
+    "ui-fonts": "git://github.com/custom-elements/ui-fonts#master",
+    "ui-styles": "git://github.com/custom-elements/ui-styles#master",
     "vulcanize": ""
   },
   "license": "MIT",
