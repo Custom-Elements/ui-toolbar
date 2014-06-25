@@ -3,7 +3,6 @@ A simple, [FontAwesome](http://fortawesome.github.io/Font-Awesome/) based
 tool button. This supports:
 
 * active state toggling
-* hotkey mapping
 * clicking
 
 Check out [demo.html](demo.html) to see a sample.
@@ -12,8 +11,7 @@ Check out [demo.html](demo.html) to see a sample.
 
 ##Events
 ###click
-Good old click, handle this to do the deed. This will also be fired when
-the `hotkey` is pressed.
+Good old click, handle this to do the deed.
 
 ##Attributes and Change Handlers
 ###active
@@ -24,8 +22,6 @@ Enable or disable the button.
 Automatically enable or disable on `click`.
 ###icon
 This is a `fa-` icon name.
-###hotkey
-Character or character code to enable hotkeys. For example 32 is hotkey space.
 ###selected
 You can use a tool icon as a menu item, when it is `selected` it stands out.
 
@@ -67,17 +63,6 @@ the animation styles.
       ready: ->
 
       attached: ->
-
-This element hooks to the document to process hotkeys.
-
-        document.addEventListener 'keydown', (e) =>
-          return unless @hotkey
-          key = if isNaN(@hotkey) then String.fromCharCode(e.keyCode).toLowerCase() else e.keyCode.toString()
-          activeElem = document.activeElement.tagName.toLowerCase()
-          if @enabled and key is @hotkey and ( e.altKey or ( activeElem != 'textarea' and activeElem != 'input' ) )
-            @fire 'click'
-            e.preventDefault?()
-            e.stopPropagation?()
 
       domReady: ->
 
