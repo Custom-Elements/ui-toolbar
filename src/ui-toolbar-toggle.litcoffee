@@ -1,13 +1,16 @@
-#ui-toolbar-button
-A simple tool button that you press.
+#ui-toolbar-toggle
+A simple tool button that flips front to back.
 
-    Polymer 'ui-toolbar-button',
+    Polymer 'ui-toolbar-toggle',
 
 ##Events
 ###click
 Good old click, handle this to do the deed.
 
 ##Attributes and Change Handlers
+###active
+Toggle state for the button, `true` is on. If there is a backface, the
+button will flip.
 
 ##Methods
 
@@ -19,10 +22,13 @@ the animation styles.
         @$.button.classList.add 'pressed'
       pointerup: ->
         @$.button.classList.remove 'pressed'
+      click: (evt) ->
+        @active = not @active
 
 ##Polymer Lifecycle
 
       created: ->
+        @active = true
 
       ready: ->
 

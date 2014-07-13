@@ -5,7 +5,9 @@
     <title>ui-toolbar</title>
     <script src="http://localhost:35729/livereload.js"></script>
     <script src="node_modules/polymer/platform.js"></script>
-    <link rel="stylesheet" href="node_modules/ui-fonts/font-awesome.less">
+    <link rel="stylesheet" href="node_modules/ui-fonts/node_modules/ui-font-awesome/font-awesome.less">
+    <link rel="stylesheet" href="node_modules/ui-fonts/node_modules/ui-font-awesome/icons.less">
+    <link rel="stylesheet" href="node_modules/ui-styles/visual-elements.less">
     <link rel="import" href="node_modules/polymer/polymer.html">
     <link rel="import" href="src/ui-toolbar.html">
     <style>
@@ -21,20 +23,28 @@
     </style>
   </head>
   <body unresolved>
-    <div id="holder">
       <ui-toolbar>
-        <ui-toolbar-button icon="fa-bars" onclick="console.log('burger!');">
+        <ui-toolbar-button onclick="console.log('burger!');">
+          <icon bars></icon>
         </ui-toolbar-button>
-        <ui-toolbar-button icon="fa-beer" toggle="true">
-        </ui-toolbar-button>
-        <ui-toolbar-button icon="fa-user" toggle="true" active="false">
-        </ui-toolbar-button>
-        <ui-toolbar-button icon="fa-bomb" enabled="false" onclick="console.log('boom!');">
-        </ui-toolbar-button>
-        <ui-toolbar-button icon="fa-gear" selected="true" onclick="this.selected = !this.selected;">
-        </ui-toolbar-button>
+        <ui-toolbar-toggle>
+          <front>
+            <icon beer></icon>
+          </front>
+          <back>
+            <icon ban></icon>
+          </back>
+        </ui-toolbar-toggle>
+
+        <ui-toolbar-toggle active="false">
+          <front>
+            <icon user></icon>
+          </front>
+          <back>
+            <icon user></icon>
+          </back>
+        </ui-toolbar-toggle>
       </ui-toolbar>
-    </div>
     <script>
       document.addEventListener('polymer-ready', function() {
         //poke your element here
