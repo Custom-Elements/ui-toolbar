@@ -1,0 +1,16 @@
+<link rel="import" href="./ui-toolbar-picker-item.html">
+<polymer-element name="ui-toolbar-picker" attributes="value"
+on-mousedown="{{pointerdown}}"
+on-mouseup="{{pointerup}}"
+>
+<template>
+  <link rel="stylesheet" type="text/css" href="./ui-toolbar-button.less">
+  <section id="button" class="face flipper" on-transitionend="{{buttonflipped}}">
+    <content select="selected"></content>
+  </section>
+  <section id="dropdown" class="dropdown" on-click="{{dropdownclick}}">
+    <content select="ui-toolbar-picker-item"></content>
+  </section>
+</template>
+<script src="./ui-toolbar-picker.litcoffee"></script>
+</polymer-element>

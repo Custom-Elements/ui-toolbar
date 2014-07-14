@@ -1,0 +1,24 @@
+@import "../node_modules/ui-styles/variables";
+
+:host {
+  display: block;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  perspective: 1000;
+  position: relative;
+  line-height: 1.75em;
+  min-width: 100%;
+  min-height: 1.75em;
+  cursor: pointer;
+  .transition(@transition);
+  color: @color-inverted-text;
+  .cannot-select-text;
+  #button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .pressed {
+    .transform(scale(0.95, 0.95));
+  }
+}

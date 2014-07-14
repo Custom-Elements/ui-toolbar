@@ -7,12 +7,12 @@ on-click="{{pointerclick}}"
   <link rel="stylesheet" type="text/css" href="./ui-toolbar-button.less">
   <section id="button" on-click="{{click}}">
     <section class="flipper {{ {active: active} | tokenList }}">
-      <section class="front face">
-        <content select="front"></content>
-      </section>
-      <section class="back face">
-        <content select="back"></content>
-      </section>
+        <section class="front face">
+          <content select="front"></content>
+        </section>
+        <section class="back face">
+          <content select="back"></content>
+        </section>
     </section>
   </section>
 </template>
