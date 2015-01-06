@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "repository": "git@github.com:Custom-Elements/ui-toolbar.git",
   "dependencies": {
-    "polymer-build": "",
+    "polymer-serve": "git://github.com/custom-elements/polymer-serve",
     "polymer": "git://github.com/custom-elements/polymer#master",
     "ui-styles": "git://github.com/custom-elements/ui-styles#master",
     "ui-fonts": "git://github.com/custom-elements/ui-fonts#master"
   },
   "license": "ISC",
   "scripts": {
-    "test": "polymer-build watch . src/ build/"
+    "test": "polymer-serve ."
   }
 }
